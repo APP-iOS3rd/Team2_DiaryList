@@ -10,7 +10,8 @@ import UIKit
 class AddDiaryView: UIViewController {
     
     var viewModel = DiaryViewModel()
-    
+    var databasePath = ""
+
     let backButton: UIButton = {
        let button = UIButton()
         button.setTitle("Close", for: .normal)
@@ -60,7 +61,33 @@ class AddDiaryView: UIViewController {
         super.viewDidLoad()
 
         self.uiCreate()
+        initDB()
     }
+    
+
+    //초기 DB설정
+      func initDB(){
+          let filemgr = FileManager.default
+          let dirPaths = filemgr.urls(for: .documentDirectory, in: .userDomainMask)[0]
+          
+          databasePath = dirPaths.appendingPathComponent("contact.db").path // 경로 설정
+          dump(databasePath)
+          if !filemgr.fileExists(atPath: databasePath) {
+              let contactDB = FMDatabase(path: databasePath)
+              
+              if contactDB.open() {
+                  let sql_stmt = "create table if not exists T_Diary (id integer primary key autoincrement, title text, detail text, date text)"
+                  
+                  if !contactDB.executeStatements(sql_stmt) {
+                      print("Error: \(contactDB.lastErrorMessage())")
+                  }
+                  contactDB.close()
+              } else {
+                  print("Error: \(contactDB.lastErrorMessage())")
+              }
+          }
+      }
+
 }
 
 //MARK: 액션 메소드
@@ -75,7 +102,7 @@ extension AddDiaryView {
     }
     
     @objc func saveDiary(_ sender: UIButton) {
-        self.viewModel.saveDiary(title: self.titleTextField.text, detail: self.detailTextView.text)
+        self.viewModel.saveDiary(title: self.titleTextField.text ?? "", detail: self.detailTextView.text ?? "", databasePath: databasePath)
     }
 }
 
