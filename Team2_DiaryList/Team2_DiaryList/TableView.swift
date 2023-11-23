@@ -9,7 +9,6 @@ import UIKit
 import SwiftUI
 
 class TableView: UITableViewController {
-            
     var asd: [DiaryModel] = [
        DiaryModel.init(title: "asd", detail: "sadsdwqwrqeqrewqwfqwfqwfwqfwqwfqwfqwfqwfqwfqwfqqwfqfwfwqwffqwfwqfqwfqwfqwfw", date: Date()),
        DiaryModel.init(title: "qwe", detail: "sadsdwqwrqeqrewqwfqwfqwfwqfwqwfqwfqwfqwfqwfqwfqqwfqfwfwqwffqwfwqfqwfqwfqwfw", date: Date()),
@@ -21,8 +20,17 @@ class TableView: UITableViewController {
         super.viewDidLoad()
         self.view.backgroundColor = .white
         self.navigationItem.title = "일기 목록"
-        self.navigationItem.rightBarButtonItem = editButtonItem
+        self.navigationItem.leftBarButtonItem = editButtonItem
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: .add, target: self, action: #selector(AddButtonClick))
     }
+    
+    @objc func AddButtonClick() {
+        // 사용시 TestView() 수정
+        let addView = TestView()
+        addView.modalPresentationStyle = .fullScreen
+        self.present(addView, animated: true)
+    }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -58,13 +66,25 @@ extension TableView {
         return UITableView.automaticDimension
     }
     
+    // 편집 모드에서 셀의 이동을 가능하게 합니다.
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         return true
     }
     
+    // 셀의 위치를 변경하고 데이터를 업데이트합니다.
     override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
         let movedItem = asd.remove(at: sourceIndexPath.row)
         asd.insert(movedItem, at: destinationIndexPath.row)
+    }
+    
+    // 테이블 삭제
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            asd.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        } else if editingStyle == .insert {
+            // 필요한 경우 추가 구현
+        }
     }
 }
 

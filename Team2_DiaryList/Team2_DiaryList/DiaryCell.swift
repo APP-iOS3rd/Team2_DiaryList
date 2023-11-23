@@ -5,13 +5,6 @@
 //  Created by 이민호 on 11/23/23.
 //
 
-//
-//  GameListCell.swift
-//  UIkit_Tutorial
-//
-//  Created by 이민호 on 2023/11/13.
-//
-
 import UIKit
 import SwiftUI
 
@@ -37,26 +30,25 @@ class DiaryCell: UITableViewCell {
         title = UILabel()
         diaryDate = UILabel()
         content = UILabel()
-        contentView.addSubview(title)
-        contentView.addSubview(diaryDate)
-        contentView.addSubview(content)
                 
         title.translatesAutoresizingMaskIntoConstraints = false
         diaryDate.translatesAutoresizingMaskIntoConstraints = false
         content.translatesAutoresizingMaskIntoConstraints = false
         
+        contentView.addSubview(diaryDate)
+        contentView.addSubview(title)
+        contentView.addSubview(content)
+        
         NSLayoutConstraint.activate([
+            diaryDate.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
+            diaryDate.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
+            diaryDate.widthAnchor.constraint(equalToConstant: 120),
+            diaryDate.heightAnchor.constraint(equalToConstant: 30),
+            
             title.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
             title.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
-//            title.trailingAnchor.constraint(equalTo: diaryDate.leadingAnchor, constant: -10),
-            title.widthAnchor.constraint(equalToConstant: 50),
+            title.trailingAnchor.constraint(equalTo: diaryDate.leadingAnchor, constant: -10),
             title.heightAnchor.constraint(equalToConstant: 30),
-            
-            diaryDate.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
-            diaryDate.leadingAnchor.constraint(equalTo: title.trailingAnchor, constant: 10),
-            diaryDate.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -60),
-            diaryDate.heightAnchor.constraint(equalToConstant: 30),
-            diaryDate.widthAnchor.constraint(equalToConstant: 50),
             
             content.topAnchor.constraint(equalTo: title.bottomAnchor, constant: 10),
             content.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
@@ -73,27 +65,26 @@ class DiaryCell: UITableViewCell {
     
     func setUptitle() {
         title.textColor = .black
-        title.text = "일기1"
+        title.text = ""
         title.font = UIFont.systemFont(ofSize: 20)
         title.textAlignment = .left
+        title.numberOfLines = 0
     }
     
     func setUpDate() {
         diaryDate.textColor = .black
-        diaryDate.text = "2023.11.12"
-        diaryDate.font = UIFont.systemFont(ofSize: 20)
-        title.textAlignment = .right
+        diaryDate.text = ""
+        diaryDate.font = UIFont.systemFont(ofSize: 15)
+        diaryDate.textAlignment = .right
+        diaryDate.numberOfLines = 0
     }
     
     func setupContent() {
         content.textColor = .black
-        content.text = """
-                asdfsadfasdfsadfsdfasdfasdfasdfasdfasdfa
-                asdfsadfasdfsadf
-                asdfsadfasdfsadf
-        """
+        content.text = ""
         content.font = UIFont.systemFont(ofSize: 15)
         content.textAlignment = .left
+        content.numberOfLines = 0
         
     }
     
@@ -102,7 +93,7 @@ class DiaryCell: UITableViewCell {
         self.content.text = content
         
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH:mm"
+        formatter.dateFormat = "yyyy-MM-dd"
         let fixDate = "\(formatter.string(from: date))"
         self.diaryDate.text = fixDate
     }
@@ -118,7 +109,7 @@ struct CustomCellPreview: PreviewProvider {
 
         func makeUIView(context: UIViewRepresentableContext<CustomCellPreview.CellPreviewContainer>) -> UITableViewCell {
            
-            let diaryCell = DiaryCell()                     
+            let diaryCell = DiaryCell()
             return diaryCell
         }
 
