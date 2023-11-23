@@ -13,7 +13,6 @@ class DiaryViewModel {
     func saveDiary(title: String, detail: String, databasePath: String) {
 
         if title != "" && detail != "" {
-            //TODO: DiaryModel.init(title: "제목", detail: "내영", date: Date())을 diarList에 넣고, sqlite에 넣기
 
             let currentDate = Date()
             let dateFormater = DateFormatter()
@@ -37,6 +36,7 @@ class DiaryViewModel {
                         // 데이터가 존재하지 않으면 INSERT 수행
                         let insertQuery = "INSERT INTO T_Diary (title, detail, date) VALUES (?, ?, ?)"
                         try contactDB.executeUpdate(insertQuery, values: [title, detail,formattedDate])
+                        self.diaryList.append(DiaryModel(title: title, detail: detail, date: formattedDate))
                     }
                     
                 } catch {
@@ -57,3 +57,4 @@ class DiaryViewModel {
         }
     }
 }
+

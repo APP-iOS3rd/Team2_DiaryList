@@ -7,31 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-
-		5A5FDA052B0F124100EBDC21 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5FDA042B0F124100EBDC21 /* TableView.swift */; };
-		5A5FDA072B0F137500EBDC21 /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5FDA062B0F137500EBDC21 /* Preview.swift */; };
-		5A5FDA092B0F159100EBDC21 /* DiaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5FDA082B0F159100EBDC21 /* DiaryCell.swift */; };
-		5A5FDA0B2B0F26D500EBDC21 /* DiaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5FDA0A2B0F26D500EBDC21 /* DiaryModel.swift */; };
-		5A5FDA0D2B0F2D4700EBDC21 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5FDA0C2B0F2D4700EBDC21 /* TestView.swift */; };
-		5A5FDA0F2B0F308C00EBDC21 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5FDA0E2B0F308C00EBDC21 /* Example.swift */; };
 		734930552B0F100200EFEA6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734930542B0F100200EFEA6A /* AppDelegate.swift */; };
 		734930572B0F100200EFEA6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734930562B0F100200EFEA6A /* SceneDelegate.swift */; };
 		734930592B0F100200EFEA6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734930582B0F100200EFEA6A /* ViewController.swift */; };
 		7349305E2B0F100400EFEA6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7349305D2B0F100400EFEA6A /* Assets.xcassets */; };
 		734930612B0F100400EFEA6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7349305F2B0F100400EFEA6A /* LaunchScreen.storyboard */; };
-		734930692B0F126B00EFEA6A /* AddDiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734930682B0F126B00EFEA6A /* AddDiaryView.swift */; };
-		7349306B2B0F1FD700EFEA6A /* DiaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7349306A2B0F1FD700EFEA6A /* DiaryModel.swift */; };
-		7349306F2B0F202700EFEA6A /* DiaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7349306E2B0F202700EFEA6A /* DiaryViewModel.swift */; };
+		73BC6C1F2B0F3C6000156B08 /* AddDiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6C1E2B0F3C5F00156B08 /* AddDiaryView.swift */; };
+		73BC6C382B0F3D3800156B08 /* DiaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6C202B0F3D3800156B08 /* DiaryViewModel.swift */; };
+		73BC6C3A2B0F3D3800156B08 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6C252B0F3D3800156B08 /* FMDatabase.m */; };
+		73BC6C3C2B0F3D3800156B08 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6C282B0F3D3800156B08 /* FMDatabasePool.m */; };
+		73BC6C3E2B0F3D3800156B08 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6C2A2B0F3D3800156B08 /* FMResultSet.m */; };
+		73BC6C452B0F3D3800156B08 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6C332B0F3D3800156B08 /* FMDatabaseAdditions.m */; };
+		73BC6C462B0F3D3800156B08 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6C352B0F3D3800156B08 /* FMDatabaseQueue.m */; };
+		73C38A0D2B0F3F9C007400F3 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5FDA042B0F124100EBDC21 /* TableView.swift */; };
+		73C38A0E2B0F3F9C007400F3 /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5FDA062B0F137500EBDC21 /* Preview.swift */; };
+		73C38A0F2B0F3F9C007400F3 /* DiaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5FDA082B0F159100EBDC21 /* DiaryCell.swift */; };
+		73C38A102B0F3F9C007400F3 /* DiaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5FDA0A2B0F26D500EBDC21 /* DiaryModel.swift */; };
+		73C38A122B0F3F9C007400F3 /* FMDatabase.h in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6C272B0F3D3800156B08 /* FMDatabase.h */; };
+		73C38A132B0F3F9C007400F3 /* FMDatabaseAdditions.h in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6C232B0F3D3800156B08 /* FMDatabaseAdditions.h */; };
+		73C38A142B0F3F9C007400F3 /* FMDatabasePool.h in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6C342B0F3D3800156B08 /* FMDatabasePool.h */; };
+		73C38A152B0F3F9C007400F3 /* FMDatabaseQueue.h in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6C2D2B0F3D3800156B08 /* FMDatabaseQueue.h */; };
+		73C38A162B0F3F9C007400F3 /* FMDB.h in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6C212B0F3D3800156B08 /* FMDB.h */; };
+		73C38A172B0F3F9C007400F3 /* FMResultSet.h in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6C2E2B0F3D3800156B08 /* FMResultSet.h */; };
+		73C38A182B0F3F9C007400F3 /* Team2_DiaryList-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6C242B0F3D3800156B08 /* Team2_DiaryList-Bridging-Header.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-
 		5A5FDA042B0F124100EBDC21 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		5A5FDA062B0F137500EBDC21 /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 		5A5FDA082B0F159100EBDC21 /* DiaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryCell.swift; sourceTree = "<group>"; };
 		5A5FDA0A2B0F26D500EBDC21 /* DiaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryModel.swift; sourceTree = "<group>"; };
-		5A5FDA0C2B0F2D4700EBDC21 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
-		5A5FDA0E2B0F308C00EBDC21 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		734930512B0F100200EFEA6A /* Team2_DiaryList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Team2_DiaryList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		734930542B0F100200EFEA6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		734930562B0F100200EFEA6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,9 +44,20 @@
 		7349305D2B0F100400EFEA6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		734930602B0F100400EFEA6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		734930622B0F100400EFEA6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		734930682B0F126B00EFEA6A /* AddDiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDiaryView.swift; sourceTree = "<group>"; };
-		7349306A2B0F1FD700EFEA6A /* DiaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryModel.swift; sourceTree = "<group>"; };
-		7349306E2B0F202700EFEA6A /* DiaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewModel.swift; sourceTree = "<group>"; };
+		73BC6C1E2B0F3C5F00156B08 /* AddDiaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDiaryView.swift; sourceTree = "<group>"; };
+		73BC6C202B0F3D3800156B08 /* DiaryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryViewModel.swift; sourceTree = "<group>"; };
+		73BC6C212B0F3D3800156B08 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		73BC6C232B0F3D3800156B08 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		73BC6C242B0F3D3800156B08 /* Team2_DiaryList-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Team2_DiaryList-Bridging-Header.h"; sourceTree = "<group>"; };
+		73BC6C252B0F3D3800156B08 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		73BC6C272B0F3D3800156B08 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		73BC6C282B0F3D3800156B08 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		73BC6C2A2B0F3D3800156B08 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		73BC6C2D2B0F3D3800156B08 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		73BC6C2E2B0F3D3800156B08 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		73BC6C332B0F3D3800156B08 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		73BC6C342B0F3D3800156B08 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		73BC6C352B0F3D3800156B08 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +65,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CE7211D2B0F2FA000199A58 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +74,6 @@
 		5CE7211B2B0F2FA000199A58 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5CE7211C2B0F2FA000199A58 /* libsqlite3.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -70,6 +84,7 @@
 				734930532B0F100200EFEA6A /* Team2_DiaryList */,
 				734930522B0F100200EFEA6A /* Products */,
 				5CE7211B2B0F2FA000199A58 /* Frameworks */,
+				73BC6C1D2B0F3C3F00156B08 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,17 +103,35 @@
 				734930562B0F100200EFEA6A /* SceneDelegate.swift */,
 				734930582B0F100200EFEA6A /* ViewController.swift */,
 				5A5FDA042B0F124100EBDC21 /* TableView.swift */,
+				5A5FDA082B0F159100EBDC21 /* DiaryCell.swift */,
+				73BC6C1E2B0F3C5F00156B08 /* AddDiaryView.swift */,
+				73BC6C202B0F3D3800156B08 /* DiaryViewModel.swift */,
+				5A5FDA0A2B0F26D500EBDC21 /* DiaryModel.swift */,
 				7349305D2B0F100400EFEA6A /* Assets.xcassets */,
 				7349305F2B0F100400EFEA6A /* LaunchScreen.storyboard */,
 				734930622B0F100400EFEA6A /* Info.plist */,
+				73BC6C272B0F3D3800156B08 /* FMDatabase.h */,
+				73BC6C252B0F3D3800156B08 /* FMDatabase.m */,
+				73BC6C232B0F3D3800156B08 /* FMDatabaseAdditions.h */,
+				73BC6C332B0F3D3800156B08 /* FMDatabaseAdditions.m */,
+				73BC6C342B0F3D3800156B08 /* FMDatabasePool.h */,
+				73BC6C282B0F3D3800156B08 /* FMDatabasePool.m */,
+				73BC6C2D2B0F3D3800156B08 /* FMDatabaseQueue.h */,
+				73BC6C352B0F3D3800156B08 /* FMDatabaseQueue.m */,
+				73BC6C212B0F3D3800156B08 /* FMDB.h */,
+				73BC6C2E2B0F3D3800156B08 /* FMResultSet.h */,
+				73BC6C2A2B0F3D3800156B08 /* FMResultSet.m */,
+				73BC6C242B0F3D3800156B08 /* Team2_DiaryList-Bridging-Header.h */,
 				5A5FDA062B0F137500EBDC21 /* Preview.swift */,
-				5A5FDA082B0F159100EBDC21 /* DiaryCell.swift */,
-				5A5FDA0A2B0F26D500EBDC21 /* DiaryModel.swift */,
-				5A5FDA0C2B0F2D4700EBDC21 /* TestView.swift */,
-				5A5FDA0E2B0F308C00EBDC21 /* Example.swift */,
-
 			);
 			path = Team2_DiaryList;
+			sourceTree = "<group>";
+		};
+		73BC6C1D2B0F3C3F00156B08 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,17 +205,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7349306F2B0F202700EFEA6A /* DiaryViewModel.swift in Sources */,
+				73C38A0D2B0F3F9C007400F3 /* TableView.swift in Sources */,
+				73C38A0E2B0F3F9C007400F3 /* Preview.swift in Sources */,
+				73C38A0F2B0F3F9C007400F3 /* DiaryCell.swift in Sources */,
+				73C38A102B0F3F9C007400F3 /* DiaryModel.swift in Sources */,
+				73C38A122B0F3F9C007400F3 /* FMDatabase.h in Sources */,
+				73C38A132B0F3F9C007400F3 /* FMDatabaseAdditions.h in Sources */,
+				73C38A142B0F3F9C007400F3 /* FMDatabasePool.h in Sources */,
+				73C38A152B0F3F9C007400F3 /* FMDatabaseQueue.h in Sources */,
+				73C38A162B0F3F9C007400F3 /* FMDB.h in Sources */,
+				73C38A172B0F3F9C007400F3 /* FMResultSet.h in Sources */,
+				73C38A182B0F3F9C007400F3 /* Team2_DiaryList-Bridging-Header.h in Sources */,
+				73BC6C1F2B0F3C6000156B08 /* AddDiaryView.swift in Sources */,
 				734930592B0F100200EFEA6A /* ViewController.swift in Sources */,
+				73BC6C462B0F3D3800156B08 /* FMDatabaseQueue.m in Sources */,
 				734930552B0F100200EFEA6A /* AppDelegate.swift in Sources */,
-				5CE721162B0F2F0700199A58 /* FMDatabasePool.m in Sources */,
-				5CE721192B0F2F0700199A58 /* FMDatabaseQueue.m in Sources */,
-				5CE721182B0F2F0700199A58 /* FMDatabaseAdditions.m in Sources */,
-				734930692B0F126B00EFEA6A /* AddDiaryView.swift in Sources */,
-				5CE721172B0F2F0700199A58 /* FMResultSet.m in Sources */,
-				5CE7211A2B0F2F0700199A58 /* FMDatabase.m in Sources */,
 				734930572B0F100200EFEA6A /* SceneDelegate.swift in Sources */,
-				5A5FDA0F2B0F308C00EBDC21 /* Example.swift in Sources */,
+				73BC6C382B0F3D3800156B08 /* DiaryViewModel.swift in Sources */,
+				73BC6C3E2B0F3D3800156B08 /* FMResultSet.m in Sources */,
+				73BC6C3C2B0F3D3800156B08 /* FMDatabasePool.m in Sources */,
+				73BC6C452B0F3D3800156B08 /* FMDatabaseAdditions.m in Sources */,
+				73BC6C3A2B0F3D3800156B08 /* FMDatabase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

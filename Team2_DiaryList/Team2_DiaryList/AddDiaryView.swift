@@ -9,7 +9,8 @@ import UIKit
 
 class AddDiaryView: UIViewController {
     
-    var viewModel = DiaryViewModel()
+    var viewModel: DiaryViewModel?
+    var tableView: UITableView?
     var databasePath = ""
 
     let backButton: UIButton = {
@@ -97,12 +98,15 @@ extension AddDiaryView {
         self.view.endEditing(true)
     }
     
-    @objc func gpBack(_ sender: UIButton) {
+    @objc func goBack(_ sender: UIButton) {
         self.dismiss(animated: true)
     }
     
     @objc func saveDiary(_ sender: UIButton) {
-        self.viewModel.saveDiary(title: self.titleTextField.text ?? "", detail: self.detailTextView.text ?? "", databasePath: databasePath)
+        self.viewModel?.saveDiary(title: self.titleTextField.text ?? "", detail: self.detailTextView.text ?? "", databasePath: databasePath)
+        self.dismiss(animated: true) {
+            self.tableView?.reloadData()
+        }
     }
 }
 
@@ -111,6 +115,7 @@ extension AddDiaryView {
     func uiCreate(){
         self.view.backgroundColor = .systemBackground
         
+        self.backButton.addTarget(self, action: #selector(goBack(_:)), for: .touchUpInside)
         self.saveButton.addTarget(self, action: #selector(saveDiary(_:)), for: .touchUpInside)
         
         self.view.addSubview(self.backButton)

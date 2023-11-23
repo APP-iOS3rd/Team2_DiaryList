@@ -9,12 +9,7 @@ import UIKit
 import SwiftUI
 
 class TableView: UITableViewController {
-    var asd: [DiaryModel] = [
-       DiaryModel.init(title: "asd", detail: "sadsdwqwrqeqrewqwfqwfqwfwqfwqwfqwfqwfqwfqwfqwfqqwfqfwfwqwffqwfwqfqwfqwfqwfw", date: Date()),
-       DiaryModel.init(title: "qwe", detail: "sadsdwqwrqeqrewqwfqwfqwfwqfwqwfqwfqwfqwfqwfqwfqqwfqfwfwqwffqwfwqfqwfqwfqwfw", date: Date()),
-       DiaryModel.init(title: "asd", detail: "sadsdwqwrqeqrewqwfqwfqwfwqfwqwfqwfqwfqwfqwfqwfqqwfqfwfwqwffqwfwqfqwfqwfqwfw", date: Date()),
-       DiaryModel.init(title: "qwe", detail: "sadsdwqwrqeqrewqwfqwfqwfwqfwqwfqwfqwfqwfqwfqwfqqwfqfwfwqwffqwfwqfqwfqwfqwfadkfjaskdjflkasjfdlaskjdflkasjdflkasjflkasjdflkajsdflkjasldkfjlaksjdf;asjdflkajs;dlfkjas;lkdfjlaskjfdlkasjdlf;kjas;lkdfj;aslkjfd;lkasjdf;lkasjdf;lkj;lkasd\n", date: Date())
-   ]
+    var viewModel = DiaryViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,8 +21,11 @@ class TableView: UITableViewController {
     
     @objc func AddButtonClick() {
         // 사용시 TestView() 수정
-        let addView = TestView()
+        let addView = AddDiaryView()
         addView.modalPresentationStyle = .fullScreen
+        
+        addView.viewModel = self.viewModel
+        addView.tableView = self.tableView
         self.present(addView, animated: true)
     }
     
@@ -49,13 +47,13 @@ class TableView: UITableViewController {
 extension TableView {
     // cell 개수 설정
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return asd.count
+        return self.viewModel.diaryList.count
     }
     
     // Cell 지정
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: DiaryCell.identifier, for: indexPath) as! DiaryCell
-        let data = asd[indexPath.row]
+        let data = self.viewModel.diaryList[indexPath.row]
         
         cell.configure(title: data.title, date: data.date, content: data.detail)
         return cell
@@ -73,14 +71,14 @@ extension TableView {
     
     // 셀의 위치를 변경하고 데이터를 업데이트합니다.
     override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
-        let movedItem = asd.remove(at: sourceIndexPath.row)
-        asd.insert(movedItem, at: destinationIndexPath.row)
+        let movedItem = self.viewModel.diaryList.remove(at: sourceIndexPath.row)
+        self.viewModel.diaryList.insert(movedItem, at: destinationIndexPath.row)
     }
     
     // 테이블 삭제
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            asd.remove(at: indexPath.row)
+            self.viewModel.diaryList.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // 필요한 경우 추가 구현
@@ -88,8 +86,3 @@ extension TableView {
     }
 }
 
-struct TableView_Preview: PreviewProvider {
-    static var previews: some View {
-        TableView().showPreview()
-    }
-}

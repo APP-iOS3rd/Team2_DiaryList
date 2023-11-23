@@ -88,14 +88,10 @@ class DiaryCell: UITableViewCell {
         
     }
     
-    func configure(title: String, date: Date, content: String) {
+    func configure(title: String, date: String, content: String) {
         self.title.text = title
         self.content.text = content
-        
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd"
-        let fixDate = "\(formatter.string(from: date))"
-        self.diaryDate.text = fixDate
+        self.diaryDate.text = date
     }
     
 }
