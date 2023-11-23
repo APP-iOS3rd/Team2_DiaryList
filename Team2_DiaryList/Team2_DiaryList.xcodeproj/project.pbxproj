@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5CE721162B0F2F0700199A58 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE7210B2B0F2F0600199A58 /* FMDatabasePool.m */; };
-		5CE721172B0F2F0700199A58 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE7210F2B0F2F0700199A58 /* FMResultSet.m */; };
-		5CE721182B0F2F0700199A58 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE721102B0F2F0700199A58 /* FMDatabaseAdditions.m */; };
-		5CE721192B0F2F0700199A58 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE721142B0F2F0700199A58 /* FMDatabaseQueue.m */; };
-		5CE7211A2B0F2F0700199A58 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE721152B0F2F0700199A58 /* FMDatabase.m */; };
-		5CE7211D2B0F2FA000199A58 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE7211C2B0F2FA000199A58 /* libsqlite3.tbd */; };
+
+		5A5FDA052B0F124100EBDC21 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5FDA042B0F124100EBDC21 /* TableView.swift */; };
+		5A5FDA072B0F137500EBDC21 /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5FDA062B0F137500EBDC21 /* Preview.swift */; };
+		5A5FDA092B0F159100EBDC21 /* DiaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5FDA082B0F159100EBDC21 /* DiaryCell.swift */; };
+		5A5FDA0B2B0F26D500EBDC21 /* DiaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5FDA0A2B0F26D500EBDC21 /* DiaryModel.swift */; };
+		5A5FDA0D2B0F2D4700EBDC21 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5FDA0C2B0F2D4700EBDC21 /* TestView.swift */; };
+		5A5FDA0F2B0F308C00EBDC21 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5FDA0E2B0F308C00EBDC21 /* Example.swift */; };
 		734930552B0F100200EFEA6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734930542B0F100200EFEA6A /* AppDelegate.swift */; };
 		734930572B0F100200EFEA6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734930562B0F100200EFEA6A /* SceneDelegate.swift */; };
 		734930592B0F100200EFEA6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734930582B0F100200EFEA6A /* ViewController.swift */; };
@@ -24,19 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5CE7210A2B0F2F0600199A58 /* Team2_DiaryList-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Team2_DiaryList-Bridging-Header.h"; sourceTree = "<group>"; };
-		5CE7210B2B0F2F0600199A58 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
-		5CE7210C2B0F2F0600199A58 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
-		5CE7210D2B0F2F0600199A58 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
-		5CE7210E2B0F2F0700199A58 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
-		5CE7210F2B0F2F0700199A58 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
-		5CE721102B0F2F0700199A58 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
-		5CE721112B0F2F0700199A58 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
-		5CE721122B0F2F0700199A58 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
-		5CE721132B0F2F0700199A58 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
-		5CE721142B0F2F0700199A58 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
-		5CE721152B0F2F0700199A58 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
-		5CE7211C2B0F2FA000199A58 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+
+		5A5FDA042B0F124100EBDC21 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		5A5FDA062B0F137500EBDC21 /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
+		5A5FDA082B0F159100EBDC21 /* DiaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryCell.swift; sourceTree = "<group>"; };
+		5A5FDA0A2B0F26D500EBDC21 /* DiaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryModel.swift; sourceTree = "<group>"; };
+		5A5FDA0C2B0F2D4700EBDC21 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		5A5FDA0E2B0F308C00EBDC21 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		734930512B0F100200EFEA6A /* Team2_DiaryList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Team2_DiaryList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		734930542B0F100200EFEA6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		734930562B0F100200EFEA6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,24 +87,16 @@
 				734930542B0F100200EFEA6A /* AppDelegate.swift */,
 				734930562B0F100200EFEA6A /* SceneDelegate.swift */,
 				734930582B0F100200EFEA6A /* ViewController.swift */,
-				734930682B0F126B00EFEA6A /* AddDiaryView.swift */,
-				7349306A2B0F1FD700EFEA6A /* DiaryModel.swift */,
-				7349306E2B0F202700EFEA6A /* DiaryViewModel.swift */,
-				5CE7210C2B0F2F0600199A58 /* FMDatabase.h */,
-				5CE721152B0F2F0700199A58 /* FMDatabase.m */,
-				5CE721112B0F2F0700199A58 /* FMDatabaseAdditions.h */,
-				5CE721102B0F2F0700199A58 /* FMDatabaseAdditions.m */,
-				5CE721122B0F2F0700199A58 /* FMDatabasePool.h */,
-				5CE7210B2B0F2F0600199A58 /* FMDatabasePool.m */,
-				5CE7210D2B0F2F0600199A58 /* FMDatabaseQueue.h */,
-				5CE721142B0F2F0700199A58 /* FMDatabaseQueue.m */,
-				5CE721132B0F2F0700199A58 /* FMDB.h */,
-				5CE7210E2B0F2F0700199A58 /* FMResultSet.h */,
-				5CE7210F2B0F2F0700199A58 /* FMResultSet.m */,
+				5A5FDA042B0F124100EBDC21 /* TableView.swift */,
 				7349305D2B0F100400EFEA6A /* Assets.xcassets */,
 				7349305F2B0F100400EFEA6A /* LaunchScreen.storyboard */,
 				734930622B0F100400EFEA6A /* Info.plist */,
-				5CE7210A2B0F2F0600199A58 /* Team2_DiaryList-Bridging-Header.h */,
+				5A5FDA062B0F137500EBDC21 /* Preview.swift */,
+				5A5FDA082B0F159100EBDC21 /* DiaryCell.swift */,
+				5A5FDA0A2B0F26D500EBDC21 /* DiaryModel.swift */,
+				5A5FDA0C2B0F2D4700EBDC21 /* TestView.swift */,
+				5A5FDA0E2B0F308C00EBDC21 /* Example.swift */,
+
 			);
 			path = Team2_DiaryList;
 			sourceTree = "<group>";
@@ -187,7 +174,6 @@
 			files = (
 				7349306F2B0F202700EFEA6A /* DiaryViewModel.swift in Sources */,
 				734930592B0F100200EFEA6A /* ViewController.swift in Sources */,
-				7349306B2B0F1FD700EFEA6A /* DiaryModel.swift in Sources */,
 				734930552B0F100200EFEA6A /* AppDelegate.swift in Sources */,
 				5CE721162B0F2F0700199A58 /* FMDatabasePool.m in Sources */,
 				5CE721192B0F2F0700199A58 /* FMDatabaseQueue.m in Sources */,
@@ -196,6 +182,7 @@
 				5CE721172B0F2F0700199A58 /* FMResultSet.m in Sources */,
 				5CE7211A2B0F2F0700199A58 /* FMDatabase.m in Sources */,
 				734930572B0F100200EFEA6A /* SceneDelegate.swift in Sources */,
+				5A5FDA0F2B0F308C00EBDC21 /* Example.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
