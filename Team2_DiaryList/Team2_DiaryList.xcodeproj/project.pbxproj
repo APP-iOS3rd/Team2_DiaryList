@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A5FDA052B0F124100EBDC21 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5FDA042B0F124100EBDC21 /* TableView.swift */; };
+		5A5FDA072B0F137500EBDC21 /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5FDA062B0F137500EBDC21 /* Preview.swift */; };
+		5A5FDA092B0F159100EBDC21 /* DiaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5FDA082B0F159100EBDC21 /* DiaryCell.swift */; };
+		5A5FDA0B2B0F26D500EBDC21 /* DiaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5FDA0A2B0F26D500EBDC21 /* DiaryModel.swift */; };
+		5A5FDA0D2B0F2D4700EBDC21 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5FDA0C2B0F2D4700EBDC21 /* TestView.swift */; };
+		5A5FDA0F2B0F308C00EBDC21 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5FDA0E2B0F308C00EBDC21 /* Example.swift */; };
 		734930552B0F100200EFEA6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734930542B0F100200EFEA6A /* AppDelegate.swift */; };
 		734930572B0F100200EFEA6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734930562B0F100200EFEA6A /* SceneDelegate.swift */; };
 		734930592B0F100200EFEA6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734930582B0F100200EFEA6A /* ViewController.swift */; };
@@ -15,6 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A5FDA042B0F124100EBDC21 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		5A5FDA062B0F137500EBDC21 /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
+		5A5FDA082B0F159100EBDC21 /* DiaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryCell.swift; sourceTree = "<group>"; };
+		5A5FDA0A2B0F26D500EBDC21 /* DiaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryModel.swift; sourceTree = "<group>"; };
+		5A5FDA0C2B0F2D4700EBDC21 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		5A5FDA0E2B0F308C00EBDC21 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		734930512B0F100200EFEA6A /* Team2_DiaryList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Team2_DiaryList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		734930542B0F100200EFEA6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		734930562B0F100200EFEA6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,9 +69,15 @@
 				734930542B0F100200EFEA6A /* AppDelegate.swift */,
 				734930562B0F100200EFEA6A /* SceneDelegate.swift */,
 				734930582B0F100200EFEA6A /* ViewController.swift */,
+				5A5FDA042B0F124100EBDC21 /* TableView.swift */,
 				7349305D2B0F100400EFEA6A /* Assets.xcassets */,
 				7349305F2B0F100400EFEA6A /* LaunchScreen.storyboard */,
 				734930622B0F100400EFEA6A /* Info.plist */,
+				5A5FDA062B0F137500EBDC21 /* Preview.swift */,
+				5A5FDA082B0F159100EBDC21 /* DiaryCell.swift */,
+				5A5FDA0A2B0F26D500EBDC21 /* DiaryModel.swift */,
+				5A5FDA0C2B0F2D4700EBDC21 /* TestView.swift */,
+				5A5FDA0E2B0F308C00EBDC21 /* Example.swift */,
 			);
 			path = Team2_DiaryList;
 			sourceTree = "<group>";
@@ -135,8 +153,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				734930592B0F100200EFEA6A /* ViewController.swift in Sources */,
+				5A5FDA052B0F124100EBDC21 /* TableView.swift in Sources */,
+				5A5FDA0B2B0F26D500EBDC21 /* DiaryModel.swift in Sources */,
+				5A5FDA072B0F137500EBDC21 /* Preview.swift in Sources */,
+				5A5FDA0D2B0F2D4700EBDC21 /* TestView.swift in Sources */,
+				5A5FDA092B0F159100EBDC21 /* DiaryCell.swift in Sources */,
 				734930552B0F100200EFEA6A /* AppDelegate.swift in Sources */,
 				734930572B0F100200EFEA6A /* SceneDelegate.swift in Sources */,
+				5A5FDA0F2B0F308C00EBDC21 /* Example.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
