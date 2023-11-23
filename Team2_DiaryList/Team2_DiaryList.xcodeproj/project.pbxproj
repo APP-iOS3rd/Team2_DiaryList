@@ -13,6 +13,8 @@
 		7349305E2B0F100400EFEA6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7349305D2B0F100400EFEA6A /* Assets.xcassets */; };
 		734930612B0F100400EFEA6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7349305F2B0F100400EFEA6A /* LaunchScreen.storyboard */; };
 		734930692B0F126B00EFEA6A /* AddDiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734930682B0F126B00EFEA6A /* AddDiaryView.swift */; };
+		7349306B2B0F1FD700EFEA6A /* DiaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7349306A2B0F1FD700EFEA6A /* DiaryModel.swift */; };
+		7349306F2B0F202700EFEA6A /* DiaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7349306E2B0F202700EFEA6A /* DiaryViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		734930602B0F100400EFEA6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		734930622B0F100400EFEA6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		734930682B0F126B00EFEA6A /* AddDiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDiaryView.swift; sourceTree = "<group>"; };
+		7349306A2B0F1FD700EFEA6A /* DiaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryModel.swift; sourceTree = "<group>"; };
+		7349306E2B0F202700EFEA6A /* DiaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				734930562B0F100200EFEA6A /* SceneDelegate.swift */,
 				734930582B0F100200EFEA6A /* ViewController.swift */,
 				734930682B0F126B00EFEA6A /* AddDiaryView.swift */,
+				7349306A2B0F1FD700EFEA6A /* DiaryModel.swift */,
+				7349306E2B0F202700EFEA6A /* DiaryViewModel.swift */,
 				7349305D2B0F100400EFEA6A /* Assets.xcassets */,
 				7349305F2B0F100400EFEA6A /* LaunchScreen.storyboard */,
 				734930622B0F100400EFEA6A /* Info.plist */,
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7349306F2B0F202700EFEA6A /* DiaryViewModel.swift in Sources */,
 				734930592B0F100200EFEA6A /* ViewController.swift in Sources */,
+				7349306B2B0F1FD700EFEA6A /* DiaryModel.swift in Sources */,
 				734930552B0F100200EFEA6A /* AppDelegate.swift in Sources */,
 				734930692B0F126B00EFEA6A /* AddDiaryView.swift in Sources */,
 				734930572B0F100200EFEA6A /* SceneDelegate.swift in Sources */,

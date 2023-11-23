@@ -9,6 +9,8 @@ import UIKit
 
 class AddDiaryView: UIViewController {
     
+    var viewModel = DiaryViewModel()
+    
     let backButton: UIButton = {
        let button = UIButton()
         button.setTitle("Close", for: .normal)
@@ -61,9 +63,28 @@ class AddDiaryView: UIViewController {
     }
 }
 
+//MARK: 액션 메소드
+extension AddDiaryView {
+    //MARK: tap 제스쳐
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    @objc func gpBack(_ sender: UIButton) {
+        self.dismiss(animated: true)
+    }
+    
+    @objc func saveDiary(_ sender: UIButton) {
+        self.viewModel.saveDiary(title: self.titleTextField.text, detail: self.detailTextView.text)
+    }
+}
+
+//MARK: 뷰 그리기
 extension AddDiaryView {
     func uiCreate(){
         self.view.backgroundColor = .systemBackground
+        
+        self.saveButton.addTarget(self, action: #selector(saveDiary(_:)), for: .touchUpInside)
         
         self.view.addSubview(self.backButton)
         self.view.addSubview(self.saveButton)
